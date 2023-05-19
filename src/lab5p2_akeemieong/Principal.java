@@ -32,6 +32,11 @@ public class Principal extends javax.swing.JFrame {
         jPanel10 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
+        namee = new javax.swing.JLabel();
+        basee = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
         jPanel3 = new javax.swing.JPanel();
         jTabbedPane4 = new javax.swing.JTabbedPane();
         jPanel13 = new javax.swing.JPanel();
@@ -65,7 +70,13 @@ public class Principal extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 204));
 
-        jPanel9.setBackground(new java.awt.Color(255, 102, 102));
+        jTabbedPane1.setBackground(new java.awt.Color(255, 204, 204));
+        jTabbedPane1.setForeground(new java.awt.Color(0, 0, 0));
+
+        jTabbedPane3.setBackground(new java.awt.Color(153, 153, 255));
+        jTabbedPane3.setForeground(new java.awt.Color(0, 0, 0));
+
+        jPanel9.setBackground(new java.awt.Color(255, 153, 153));
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -79,6 +90,8 @@ public class Principal extends javax.swing.JFrame {
         );
 
         jTabbedPane3.addTab("Agregar", jPanel9);
+
+        jPanel10.setBackground(new java.awt.Color(153, 255, 153));
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -106,15 +119,47 @@ public class Principal extends javax.swing.JFrame {
 
         jTabbedPane3.addTab("Modificar", jPanel11);
 
+        jPanel12.setBackground(new java.awt.Color(255, 204, 255));
+
+        namee.setText("Nombre del escuadron");
+
+        basee.setText("Lugar de la base");
+
+        jLabel8.setText("Tipo de escuadron");
+
+        jRadioButton1.setText("Heroes");
+
+        jRadioButton2.setText("Villano");
+
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 698, Short.MAX_VALUE)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(namee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(basee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(306, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 335, Short.MAX_VALUE)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(namee)
+                .addGap(18, 18, 18)
+                .addComponent(basee)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(jRadioButton1)
+                    .addComponent(jRadioButton2))
+                .addContainerGap(217, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Eliminar", jPanel12);
@@ -132,12 +177,18 @@ public class Principal extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Escuadron", jPanel2);
 
+        jPanel13.setBackground(new java.awt.Color(204, 204, 255));
+
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Nombre del Villano");
 
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Debilidad");
 
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Aligilidad Fisica");
 
+        agregarvillano.setForeground(new java.awt.Color(0, 0, 0));
         agregarvillano.setText("Agregar Villano");
         agregarvillano.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,8 +196,10 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Poder");
 
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Fuerza");
 
         jTextArea1.setColumns(20);
@@ -155,6 +208,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel6.setText("Villano");
 
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Aligilidad Mental");
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
@@ -445,6 +499,7 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton agregarvillano;
+    private javax.swing.JLabel basee;
     private javax.swing.JTextField debilidadv;
     private javax.swing.JTextField fisicav;
     private javax.swing.JTextField fuerzav;
@@ -455,6 +510,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -471,6 +527,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
@@ -478,6 +536,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane4;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField mentalv;
+    private javax.swing.JLabel namee;
     private javax.swing.JTextField namev;
     private javax.swing.JTextField poderv;
     // End of variables declaration//GEN-END:variables
